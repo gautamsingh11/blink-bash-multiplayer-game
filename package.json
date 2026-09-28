@@ -1,0 +1,12 @@
+{
+  "name": "blink-bash",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A real-time, phone-first party game",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111522">
+  <title>Blink Bash — quick games, big points</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main id="app" class="shell">
+    <section id="home" class="screen landing">
+      <header class="brand-row"><div class="brand-mark">BB</div><span class="brand-word">BLINK <b>BASH</b></span><span class="top-pill"><i></i> PARTY ARCADE</span></header>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span>✳</span> THE QUICK-FIRE PARTY GAME</div>
+          <h1>Ready.<br><em>Set.</em> <span>Whoops!</span></h1>
+          <p class="lede">Fast fingers. Quick wits. A little friendly chaos. Get your crew in one room and let the points fly.</p>
+          <div class="feature-row"><span>⚡ 8 quick rounds</span><span>♟ 2–8 players</span><span>◉ Your phone is your controller</span></div>
+        </div>
+        <div class="home-panel">
+          <div class="panel-kicker">JUMP IN</div>
+          <h2>Let's play.</h2>
+          <label class="field-label" for="player-name">YOUR NAME</label>
+          <input id="player-name" class="input" maxlength="16" placeholder="e.g. Speedy Sam" autocomplete="nickname">
+          <div class="home-actions"><button id="create-room" class="button button-primary"><span>✦</span> Create a room</button><div class="split-label"><span></span> OR JOIN FRIENDS <span></span></div><div class="join-row"><input id="room-code" class="input code-input" maxlength="4" placeholder="CODE" autocomplete="off"><button id="join-room" class="button button-secondary">Join room <span>→</span></button></div></div>
+          <div id="home-error" class="error-line" role="alert"></div>
+          <div class="private-note"><span>⌁</span> No downloads. Just pick a name and play.</div>
+        </div>
+      </div>
+      <footer class="home-footer"><span>THE RULES ARE SIMPLE</span><span><b>01</b> Tap at the right time <i>·</i> <b>02</b> Be quicker than your friends <i>·</i> <b>03</b> Take the crown</span></footer>
+    </section>
+    <section id="room" class="screen hidden"></section>
+    <div id="toast" class="toast" aria-live="polite"></div>
+  </main>
+  <script src="/client.js"></script>
+</body>
+</html>
